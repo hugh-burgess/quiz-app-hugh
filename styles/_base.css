@@ -47,6 +47,7 @@ button {
   color: tomato;
 }
 
+/*targetting button class*/
 .footer {
   background-color: green;
   grid-row: 3 / 4;
@@ -57,14 +58,29 @@ button {
   justify-content: space-around;
 }
 
+/*targets anchors inside*/
 .button {
   flex-direction: row;
-  width: 98%;
   background-color: orange;
   border: red 1px solid;
   padding: 30px;
+  overflow: hidden;
+  object-position: center;
+}
+
+/*targetting icons*/
+a {
+  object-fit: contain;
 }
 
 main {
   background-color: black;
 }
+
+/*icon in home settings*/
+.icon {
+  object-position: center;
+  color: blue;
+}
+
+/*anchor id's*/
