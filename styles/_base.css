@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+html {
+  display: grid;
+  justify-content: center;
 }
 
 body {
@@ -7,6 +13,7 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
+  background-color: aqua;
 }
 
 h1,
@@ -18,4 +25,37 @@ h3 {
 input,
 button {
   font-size: 1em;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-rows: 80px auto 80px;
+  width: 375px;
+  height: 667px;
+}
+
+.header {
+  background-color: red;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+.grid-main {
+  grid-row: 2 / 3;
+}
+.footer {
+  background-color: green;
+  grid-row: 3 / 4;
+  bottom: 0;
+}
+
+.nav {
+  background: yellow;
+}
+
+.button {
+  color: orange;
+}
+
+main {
+  background-color: black;
 }
