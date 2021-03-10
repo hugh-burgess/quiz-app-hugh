@@ -112,14 +112,14 @@ button {
   margin: 0 5px;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #ff6347;
+  background-color: #ffa500;
   width: 9em;
 }
 
 .answer-button {
-  margin: 0 10px;
+  margin: 0 30px;
   border-radius: 5px;
-  background-color: tomato;
+  background-color: #ffa500;
   cursor: pointer;
 }
 
@@ -136,7 +136,7 @@ button {
   width: 100vw;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
+  grid-gap: 3px;
   z-index: 5;
 }
 
