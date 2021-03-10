@@ -22,13 +22,16 @@ button {
   font-size: 1em;
 }
 
+/* layout */
 .layout-grid {
   display: grid;
   grid-template-rows: [header] 80px [main] auto [footer] 80px;
   grid-template-columns: [width] 375px;
   margin: 0 auto;
-  width: 375px;
-  height: 667px;
+  min-width: 320px;
+  max-width: 60vw;
+  min-height: 100vh;
+  position: relative;
 }
 
 .header {
@@ -38,17 +41,29 @@ button {
   top: 0;
   width: 375px;
   position: fixed;
-  overflow: hidden;
 }
 
 .grid-main {
   grid-row: main;
-  height: 100%;
+  overflow-y: scroll;
 }
 
+/* sample box flex parent */
 .content {
   color: tomato;
-  padding: 50px 50px 120px 50px;
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* sample boxes flex item */
+.content-box {
+  height: 50px;
+  width: 100vw;
+  background-color: seashell;
+  text-align: center;
 }
 
 /* targetting button class */
@@ -56,31 +71,26 @@ button {
   background-color: green;
   grid-row: footer;
   width: 375px;
-  bottom: 0;
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0%;
 }
 
 /* button settings */
 .button {
   background-color: orange;
   border: red 1px solid;
-  padding: 30px;
   overflow: hidden;
-  object-position: center;
+  align-self: center;
+  text-align: center;
 }
 
 /* targetting icons */
 a {
   object-fit: contain;
-  box-shadow: inset 0 2.8px 2.2px rgba(0, 0, 0, 0.112),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.162), 0 12.5px 10px rgba(0, 0, 0, 0.2),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.238), 0 41.8px 33.4px rgba(0, 0, 0, 0.288),
-    0 100px 80px rgba(0, 0, 0, 0.4);
+
   height: 100%;
   border-radius: 5px;
-  align-content: stretch;
 }
 
 main {
@@ -91,5 +101,5 @@ main {
 .icon {
   object-position: center;
   color: blue;
-  font-size: 200%;
+  font-size: 220%;
 }
