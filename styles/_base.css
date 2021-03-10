@@ -53,7 +53,7 @@ button {
 /* sample box - flex parent */
 .content {
   color: black;
-  padding: 50px 50px;
+  padding: 30px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
