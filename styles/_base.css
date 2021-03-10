@@ -124,6 +124,7 @@ button {
 
 #answer {
   display: none;
+  text-align: center;
 }
 
 /* targetting button class */

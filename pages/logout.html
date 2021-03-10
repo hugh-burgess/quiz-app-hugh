@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="/styles/profile.css" />
+    <link rel="stylesheet" href="/styles/logout.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/0a5eba83a2.js"
       crossorigin="anonymous"
@@ -13,57 +18,20 @@
     <script></script>
   </head>
   <body class="layout-grid">
-    <header class="header">
-      <h1>Quiz App</h1>
-    </header>
+    <header class="header"></header>
 
     <main class="grid-main">
-      <div class="content">
-        <div class="profile-heading">
-          <img
-            src="/images/profile-picture.png"
-            alt="Main Profile Picture"
-            class="profile-picture"
-          />
-          <h1 class="profile-name">Hugh</h1>
-        </div>
+      <div class="logout-wrapper">
+        <h1 class="logout-header">Thanks for using the Quiz App!</h1>
 
-        <p class="profile-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cumque
-          rerum quis deserunt iusto, nisi consequuntur adipisci ab ratione
-          quidem eveniet perspiciatis eos saepe natus assumenda quasi, voluptas
-          nemo repellat. Veniam necessitatibus eos, ducimus facilis molestiae.
-        </p>
+        <h1 class="logout-question">Want to sign back in?</h1>
 
-        <ul class="profile-tags ul-flex content-topics">
-          <li>#Loram</li>
-          <li>#Loram</li>
-          <li>#Loram</li>
-        </ul>
-
-        <a href="#logout" class="logout-anchor" target="_blank">
-          <button type="button" class="log-out-button">LOGOUT</button>
+        <a href="./index.html" class="login-anchor">
+          <button type="button" class="log-in-button">LOGIN</button>
         </a>
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="button">
-        <a href="./index.html">
-          <i class="nav-icon fas fa-home"></i>
-        </a>
-      </div>
-      <div class="button">
-        <a href="./bookmark.html"><i class="nav-icon fas fa-bookmark"></i></a>
-      </div>
-      <div class="button">
-        <a href="./create.html"><i class="nav-icon fas fa-list"></i></a>
-      </div>
-      <div class="button">
-        <a class="current-destination-button" href="./profile.html"
-          ><i class="nav-icon far fa-user-circle"></i
-        ></a>
-      </div>
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>
