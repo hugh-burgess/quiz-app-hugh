@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="/styles/bookmark.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
     <script
       src="https://kit.fontawesome.com/0a5eba83a2.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function displayText() {
+        var p = document.getElementById('answer')
+        p.style.display = 'block'
+      }
+    </script>
   </head>
   <body class="layout-grid">
     <header class="header">
@@ -16,34 +23,19 @@
     </header>
 
     <main class="grid-main">
-      <div class="content">
-        <div class="content-box">
-          <p class="content-text">Sample</p>
-          <i class="sample-bookmark fas fa-bookmark"></i>
-        </div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box">
-          <p class="content-text">Sample</p>
-          <i class="sample-bookmark fas fa-bookmark"></i>
-        </div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-      </div>
+      <div class="content"></div>
     </main>
 
     <footer class="footer">
       <div class="button">
-        <a href="./index.html"><i class="nav-icon fas fa-home"></i></a>
+        <a href="./index.html">
+          <i class="nav-icon fas fa-home"></i>
+        </a>
       </div>
       <div class="button">
-        <a href="./bookmark.html"><i class="nav-icon fas fa-bookmark"></i></a>
+        <a class="current-destination-button" href="./bookmark.html"
+          ><i class="nav-icon fas fa-bookmark"></i
+        ></a>
       </div>
       <div class="button">
         <a href="./create.html"><i class="nav-icon fas fa-list"></i></a>
