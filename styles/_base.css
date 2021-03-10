@@ -28,7 +28,7 @@ button {
   grid-template-rows: [header] 80px [main] auto [footer] 80px;
   grid-template-columns: [width] 375px;
   margin: 0 auto;
-  min-width: 320px;
+  min-width: 100vw;
   max-width: 60vw;
   min-height: 100vh;
   position: relative;
@@ -56,24 +56,29 @@ button {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  bottom: 0;
+  position: static;
 }
 
 /* sample boxes flex item */
 .content-box {
   height: 50px;
-  width: 100vw;
+  width: 100%;
   background-color: seashell;
   text-align: center;
 }
 
 /* targetting button class */
 .footer {
+  position: fixed;
+  bottom: 0;
   background-color: green;
   grid-row: footer;
   width: 375px;
-  display: grid;
+  /* ---fix footer height here--- */
+  display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 0%;
+  grid-gap: 3px;
 }
 
 /* button settings */
@@ -81,16 +86,21 @@ button {
   background-color: orange;
   border: red 1px solid;
   overflow: hidden;
-  align-self: center;
-  text-align: center;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
 }
 
 /* targetting icons */
 a {
-  object-fit: contain;
-
-  height: 100%;
-  border-radius: 5px;
+  position: relative;
+  height: 70%;
+  top: 10%;
+  border-radius: 50%;
 }
 
 main {
