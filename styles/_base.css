@@ -22,13 +22,17 @@ button {
   font-size: 1em;
 }
 
+/* layout */
 .layout-grid {
   display: grid;
-  grid-template-rows: [header] 1fr [main] auto [footer] 1fr;
-  grid-template-columns: [width] 375px;
+  grid-template-rows: [header] 80px [main] auto [footer] 80px;
+  grid-template-columns: [width] 100vw;
   margin: 0 auto;
-  width: 375px;
-  height: 667px;
+  height: 100vh;
+  min-width: 100vw;
+  max-width: 60vw;
+  min-height: 100vh;
+  position: relative;
 }
 
 .header {
@@ -36,61 +40,83 @@ button {
   grid-row: header;
   text-align: center;
   top: 0;
-  width: 375px;
-  position: fixed;
-  overflow: hidden;
+  width: 100vw;
 }
 
 .grid-main {
   grid-row: main;
-  height: 100%;
+  grid-column: width;
+  overflow-y: scroll;
+  width: 100vw;
 }
 
+/* sample box - flex parent */
 .content {
-  color: tomato;
-  padding: 50px;
+  color: black;
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  bottom: 0;
+  grid-column: width;
+}
+
+/* sample boxes - flex item */
+.content-box {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(202, 141, 71);
+  border: black 1px solid;
+  text-align: center;
+}
+
+/* bookmarks in sample boxes */
+.content-box .sample-bookmark {
+  position: relative;
+  color: rgb(211, 68, 68);
+  right: -60px;
+  top: -10px;
 }
 
 /* targetting button class */
 .footer {
+  bottom: 0;
   background-color: green;
   grid-row: footer;
-  width: 375px;
-  bottom: 0;
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
+  width: 100vw;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
 }
 
-/* targets anchors inside */
+/* button settings */
 .button {
-  display: flex;
-  flex-direction: row;
   background-color: orange;
-  border: red 1px solid;
-  padding: 35px;
   overflow: hidden;
-  object-position: center;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
 }
 
 /* targetting icons */
 a {
-  object-fit: contain;
-  box-shadow: inset 0 2.8px 2.2px rgba(0, 0, 0, 0.112),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.162), 0 12.5px 10px rgba(0, 0, 0, 0.2),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.238), 0 41.8px 33.4px rgba(0, 0, 0, 0.288),
-    0 100px 80px rgba(0, 0, 0, 0.4);
-  height: 100%;
+  position: relative;
+  height: 70%;
+  top: 10%;
   border-radius: 50%;
-  align-content: stretch;
 }
 
 main {
-  background-color: black;
+  background-color: rgb(207, 171, 171);
 }
 
 /* icon in home settings */
-.icon {
+.nav-icon {
   object-position: center;
   color: blue;
+  font-size: 220%;
 }
