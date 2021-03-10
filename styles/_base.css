@@ -96,6 +96,7 @@ button {
 /* hashtags */
 .content-topics {
   padding-left: 0;
+  font-size: 10px;
   list-style: none;
 }
 
@@ -104,16 +105,14 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .ul-flex > li {
   border: black 1px solid;
-  margin: 0 5px;
+  margin: 0 10px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #ffa500;
-  width: 9em;
 }
 
 .answer-button {
@@ -136,7 +135,6 @@ button {
   width: 100vw;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 3px;
   z-index: 5;
 }
 
