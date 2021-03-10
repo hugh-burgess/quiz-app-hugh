@@ -75,7 +75,6 @@ button {
   background-color: green;
   grid-row: footer;
   width: 375px;
-  /* ---fix footer height here--- */
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 3px;
@@ -84,10 +83,8 @@ button {
 /* button settings */
 .button {
   background-color: orange;
-  border: red 1px solid;
   overflow: hidden;
   height: 80px;
-
   display: flex;
   justify-content: center;
   align-items: center;
