@@ -26,7 +26,7 @@ button {
 .layout-grid {
   display: grid;
   grid-template-rows: [header] 80px [main] auto [footer] 80px;
-  grid-template-columns: [width] 375px;
+  grid-template-columns: [width] 100vw;
   margin: 0 auto;
   height: 100vh;
   min-width: 100vw;
@@ -40,7 +40,7 @@ button {
   grid-row: header;
   text-align: center;
   top: 0;
-  width: 375px;
+  width: 100vw;
 }
 
 .grid-main {
@@ -71,12 +71,12 @@ button {
   text-align: center;
 }
 
-/* bookmarks in sample booxes */
-.content-box i {
-  position: absolute;
-  z-index: 1;
-  right: 60px;
-  top: 120px;
+/* bookmarks in sample boxes */
+.content-box .sample-bookmark {
+  position: relative;
+  color: rgb(211, 68, 68);
+  right: -60px;
+  top: -10px;
 }
 
 /* targetting button class */
@@ -84,7 +84,7 @@ button {
   bottom: 0;
   background-color: green;
   grid-row: footer;
-  width: 375px;
+  width: 100vw;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 3px;
@@ -96,7 +96,7 @@ button {
   overflow: hidden;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border: 2px solid black;
   font-size: 1em;
@@ -115,7 +115,7 @@ main {
 }
 
 /* icon in home settings */
-.icon {
+.nav-icon {
   object-position: center;
   color: blue;
   font-size: 220%;
