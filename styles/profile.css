@@ -175,3 +175,38 @@ main {
 .current-destination-button > i {
   color: white;
 }
+
+/* Profile Page */
+
+/* Profile div for picture and name */
+
+.profile-heading {
+  align-items: center;
+  display: flex;
+  grid-row: width;
+  grid-column: main;
+}
+
+/* profile picture */
+.profile-picture {
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+}
+
+.profile-heading > h1 {
+  padding: 0 20px;
+  align-items: center;
+}
+
+/*End of Profile Flex */
+
+.profile-description {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
