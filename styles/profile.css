@@ -93,29 +93,6 @@ button {
   padding: 0 10px;
 }
 
-/* hashtags */
-.content-topics {
-  padding-left: 0;
-  list-style: none;
-}
-
-/* content ul flex settings */
-.ul-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.ul-flex > li {
-  border: black 1px solid;
-  margin: 0 5px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #ff6347;
-  width: 9em;
-}
-
 .answer-button {
   margin: 0 10px;
   border-radius: 5px;
@@ -209,4 +186,27 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+/* hashtags */
+.content-topics {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* hashtags parent in profile */
+.profile-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* content ul flex settings */
+
+.ul-flex > li {
+  border: black 1px solid;
+  border-radius: 5px;
+  background-color: #ff6347;
+  width: 15vh;
+  margin: 0 2px;
 }
