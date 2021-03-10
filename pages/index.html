@@ -9,6 +9,13 @@
       src="https://kit.fontawesome.com/0a5eba83a2.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function displayText() {
+        var p = document.getElementById('answer')
+        p.style.display = 'block'
+      }
+    </script>
   </head>
   <body class="layout-grid">
     <header class="header">
@@ -18,23 +25,31 @@
     <main class="grid-main">
       <div class="content">
         <div class="content-box">
-          <p class="content-text">Sample</p>
+          <h2 class="content-header">Question</h2>
+          <p class="content-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+            fugiat.
+          </p>
+
           <i class="sample-bookmark fas fa-bookmark"></i>
+
+          <ul class="ul-flex content-topics">
+            <li>#Loram</li>
+            <li>#Loram</li>
+            <li>#Loram</li>
+          </ul>
+
+          <button
+            type="button"
+            id="button"
+            class="answer-button"
+            onclick="displayText()"
+          >
+            Answer
+          </button>
+
+          <p class="answer" id="answer">This answer is...</p>
         </div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box">
-          <p class="content-text">Sample</p>
-          <i class="sample-bookmark fas fa-bookmark"></i>
-        </div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
-        <div class="content-box"><p class="content-text">Sample</p></div>
       </div>
     </main>
 

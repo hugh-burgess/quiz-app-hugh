@@ -32,7 +32,6 @@ button {
   min-width: 100vw;
   max-width: 60vw;
   min-height: 100vh;
-  position: relative;
 }
 
 .header {
@@ -41,6 +40,7 @@ button {
   text-align: center;
   top: 0;
   width: 100vw;
+  z-index: 5;
 }
 
 .grid-main {
@@ -62,21 +62,65 @@ button {
   grid-column: width;
 }
 
-/* sample boxes - flex item */
+/* sample boxes - flex parent item */
 .content-box {
-  height: 50px;
+  height: auto;
   width: 100%;
   background-color: rgb(202, 141, 71);
   border: black 1px solid;
-  text-align: center;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content-header {
+  left: 0;
 }
 
 /* bookmarks in sample boxes */
 .content-box .sample-bookmark {
-  position: relative;
-  color: rgb(211, 68, 68);
-  right: -60px;
-  top: -10px;
+  position: absolute;
+  color: rgb(6, 6, 6);
+  right: 5px;
+  top: -5px;
+  cursor: pointer;
+}
+
+.content-text {
+  padding: 15px;
+}
+
+/* hashtags */
+.content-topics {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* content ul flex settings */
+.ul-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ul-flex > li {
+  border: black 1px solid;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ff6347;
+}
+
+.answer-button {
+  border-radius: 5px;
+  background-color: tomato;
+  cursor: pointer;
+}
+
+#answer {
+  display: none;
 }
 
 /* targetting button class */
@@ -88,6 +132,7 @@ button {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 3px;
+  z-index: 5;
 }
 
 /* button settings */
