@@ -27,7 +27,7 @@ button {
   display: grid;
   grid-template-rows: [header] 80px [main] auto [footer] 80px;
   grid-template-columns: [width] 375px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   height: 100vh;
   min-width: 100vw;
   max-width: 60vw;
@@ -45,27 +45,38 @@ button {
 
 .grid-main {
   grid-row: main;
+  grid-column: width;
   overflow-y: scroll;
+  width: 100vw;
 }
 
-/* sample box flex parent */
+/* sample box - flex parent */
 .content {
-  color: tomato;
+  color: black;
   padding: 50px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
   bottom: 0;
-  position: static;
+  grid-column: width;
 }
 
-/* sample boxes flex item */
+/* sample boxes - flex item */
 .content-box {
   height: 50px;
   width: 100%;
-  background-color: beige;
+  background-color: rgb(202, 141, 71);
+  border: black 1px solid;
   text-align: center;
+}
+
+/* bookmarks in sample booxes */
+.content-box i {
+  position: absolute;
+  z-index: 1;
+  right: 60px;
+  top: 120px;
 }
 
 /* targetting button class */
@@ -100,7 +111,7 @@ a {
 }
 
 main {
-  background-color: black;
+  background-color: rgb(207, 171, 171);
 }
 
 /* icon in home settings */
