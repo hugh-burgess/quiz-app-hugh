@@ -133,6 +133,7 @@ button {
 }
 
 .content-box .sample-bookmark:hover {
+  transform: scale(1.3);
   position: absolute;
   font-size: 50px;
   right: 15px;
