@@ -1,0 +1,13 @@
+.bookmark-answer {
+  display: block;
+  text-align: center;
+}
+
+.bookmark-saved {
+  color: red;
+  position: absolute;
+  font-size: 50px;
+  right: 15px;
+  top: -5px;
+  cursor: pointer;
+}
