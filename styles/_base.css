@@ -11,6 +11,49 @@ body {
   grid-column: [width];
 }
 
+/* BEM BLOCKS */
+.body {
+}
+
+/* BEM header blocks */
+.home-header {
+}
+/* BEM main blocks */
+
+.home-main {
+}
+
+.home-main-content {
+}
+
+.question-box {
+}
+
+/* BEM footer blocks */
+.home-footer {
+}
+/* BEM ELEMENTS */
+
+/* BEM header Elements */
+
+.home-header__title {
+}
+/* BEM main Elements */
+
+.question-box__title {
+}
+
+.question-box__paragrgaph {
+}
+
+/* BEM MODIFIERS */
+
+/* BEM header Modifiers */
+
+.home-header__title--height {
+}
+
+/* Original CSS Flow */
 h1,
 h2,
 h3 {
@@ -73,7 +116,6 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 10px;
 }
 
 .content-box > h2 {
