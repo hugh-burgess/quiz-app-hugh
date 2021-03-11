@@ -73,6 +73,7 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 10px;
 }
 
 .content-box > h2 {
