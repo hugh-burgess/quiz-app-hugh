@@ -89,6 +89,35 @@ button {
   cursor: pointer;
 }
 
+.content-box .sample-bookmark:hover {
+  position: absolute;
+  font-size: 50px;
+  right: 15px;
+  top: -5px;
+  cursor: pointer;
+  animation-name: color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.content-box .sample-bookmark:active {
+  position: absolute;
+  font-size: 50px;
+  right: 15px;
+  color: rgb(207, 68, 68);
+  top: -5px;
+  cursor: pointer;
+  animation-name: color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes color {
+  100% {
+    color: rgb(207, 68, 68);
+  }
+}
+
 .content-text {
   padding: 0 10px;
 }
@@ -124,6 +153,12 @@ button {
 
 #answer {
   display: none;
+  text-align: center;
+}
+
+#answer2 {
+  display: none;
+  text-align: center;
 }
 
 /* targetting button class */
