@@ -11,8 +11,13 @@
     ></script>
 
     <script>
-      function displayText() {
+      function displayText1() {
         var p = document.getElementById('answer')
+        p.style.display = 'block'
+      }
+
+      function displayText2() {
+        var p = document.getElementById('answer2')
         p.style.display = 'block'
       }
     </script>
@@ -37,12 +42,39 @@
             type="button"
             id="button"
             class="answer-button"
-            onclick="displayText()"
+            onclick="displayText1()"
           >
             Answer
           </button>
 
           <p class="answer" id="answer">This answer is...</p>
+
+          <ul class="ul-flex content-topics">
+            <li>#Loram</li>
+            <li>#Loram</li>
+            <li>#Loram</li>
+          </ul>
+        </div>
+
+        <div class="content-box">
+          <h2 class="content-header">Question</h2>
+          <p class="content-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+            fugiat.
+          </p>
+
+          <i class="sample-bookmark fas fa-bookmark"></i>
+
+          <button
+            type="button"
+            id="button2"
+            class="answer-button"
+            onclick="displayText2()"
+          >
+            Answer
+          </button>
+
+          <p class="answer" id="answer2">This answer is...</p>
 
           <ul class="ul-flex content-topics">
             <li>#Loram</li>

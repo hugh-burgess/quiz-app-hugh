@@ -127,6 +127,11 @@ button {
   text-align: center;
 }
 
+#answer2 {
+  display: none;
+  text-align: center;
+}
+
 /* targetting button class */
 .footer {
   bottom: 0;
