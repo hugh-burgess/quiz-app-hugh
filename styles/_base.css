@@ -130,6 +130,7 @@ button {
   right: 15px;
   top: -5px;
   cursor: pointer;
+  transition: 1s ease-in;
 }
 
 .content-box .sample-bookmark:hover {
