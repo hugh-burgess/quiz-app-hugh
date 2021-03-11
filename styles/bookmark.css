@@ -4,7 +4,7 @@
 }
 
 .bookmark-saved {
-  color: red;
+  color: rgb(207, 68, 68);
   position: absolute;
   font-size: 50px;
   right: 15px;
