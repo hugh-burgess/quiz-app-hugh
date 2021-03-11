@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <script
       src="https://kit.fontawesome.com/0a5eba83a2.js"
       crossorigin="anonymous"
@@ -19,9 +21,79 @@
 
     <main class="grid-main">
       <div class="content">
-        <div class="question-box">
-          <h2 class="question-box__title"></h2>
-        </div>
+        <form class="question-box-form">
+          <label class="question-box-form__label" for="question-box__question"
+            >Add your question here:</label
+          >
+          <input
+            type="text"
+            name="question"
+            id="question-box__input-question"
+            class="question-box-form__question"
+            placeholder="2+2"
+          />
+
+          <label class="question-box-form__label" for="question-box__answer"
+            >Add your optional answers here:<br />(select the right one!)</label
+          >
+          <div class="create-options-wrapper">
+            <input
+              type="text"
+              name="answer"
+              id="question-box__answer"
+              class="question-box-form__input-answer"
+              placeholder="3"
+            />
+            <label
+              ><input
+                type="radio"
+                name="radio-button"
+                class="question-box-form__radio-button"
+            /></label>
+
+            <input
+              type="text"
+              name="answer"
+              id="question-box__answer"
+              class="question-box-form__input-answer"
+              placeholder="4"
+            />
+            <label
+              ><input
+                type="radio"
+                name="radio-button"
+                class="question-box-form__radio-button"
+            /></label>
+            <input
+              type="text"
+              name="answer"
+              id="question-box__answer"
+              class="question-box-form__input-answer"
+              placeholder="5"
+            />
+            <label
+              ><input
+                type="radio"
+                name="radio-button"
+                class="question-box-form__radio-button"
+            /></label>
+          </div>
+
+          <label class="question-box-form__label" for="question-box__tags"
+            >Add relevant tags here:</label
+          >
+          <input
+            type="text"
+            name="hashtag"
+            id="question-box__tags"
+            class="question-box-form__input-tags"
+            placeholder="#Happy, #Dogs, #Hamburg"
+          />
+
+          <button type="submit" class="question-box-form__submit-button">
+            Submit!
+          </button>
+        </form>
       </div>
     </main>
 
