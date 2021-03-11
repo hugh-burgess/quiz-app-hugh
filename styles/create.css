@@ -13,18 +13,12 @@
 
 /* CREATE - BEM - ELEMENTS */
 
-.question-box-form__input-question {
-}
-
 .question-box-form__input-answer {
   width: 50%;
   margin: 10px 0;
 }
 
 .question-box-form__input-tags {
-}
-
-.question-box-form__label {
 }
 
 .create-options-wrapper {
