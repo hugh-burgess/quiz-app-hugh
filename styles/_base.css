@@ -99,7 +99,6 @@ button {
 
 /* sample box - flex parent */
 .content {
-  color: black;
   padding: 30px 50px;
   display: flex;
   flex-direction: column;
