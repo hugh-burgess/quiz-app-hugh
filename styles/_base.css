@@ -173,14 +173,12 @@ button {
   cursor: pointer;
 }
 
-#answer {
-  display: none;
+.answer {
   text-align: center;
 }
 
-#answer2 {
+.hidden {
   display: none;
-  text-align: center;
 }
 
 /* targetting button class */
