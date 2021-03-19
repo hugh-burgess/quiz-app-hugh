@@ -7,7 +7,6 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
-  background-color: aqua;
   grid-column: [width];
 }
 
@@ -52,7 +51,6 @@ button {
 
 /* sample box - flex parent */
 .content {
-  color: black;
   padding: 50px 50px;
   display: flex;
   flex-direction: column;
@@ -86,7 +84,6 @@ button {
 /* targetting button class */
 .footer {
   bottom: 0;
-  background-color: green;
 
   grid-row: footer;
   width: 100vw;
@@ -204,4 +201,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.darkmode-parent {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.darkmode {
+  background-color: black !important;
+  color: white !important;
 }
