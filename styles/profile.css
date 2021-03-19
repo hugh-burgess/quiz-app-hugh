@@ -79,29 +79,8 @@ button {
   padding: 10px;
 }
 
-/* bookmarks in sample boxes */
-.content-box .sample-bookmark {
-  position: absolute;
-  font-size: 50px;
-  color: rgb(6, 6, 6);
-  right: 15px;
-  top: -5px;
-  cursor: pointer;
-}
-
 .content-text {
   padding: 0 10px;
-}
-
-.answer-button {
-  margin: 0 10px;
-  border-radius: 5px;
-  background-color: tomato;
-  cursor: pointer;
-}
-
-#answer {
-  display: none;
 }
 
 /* targetting button class */

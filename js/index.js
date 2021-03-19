@@ -1,6 +1,6 @@
 function displayText1() {
-  let p = document.getElementById('answer')
-  let button = document.querySelector('#button')
+  const p = document.getElementById('answer')
+  const button = document.querySelector('#button')
   button.addEventListener('click', () => {
     p.style.display = 'block'
     if (p.style.display === 'block') {
@@ -10,11 +10,18 @@ function displayText1() {
 }
 
 function displayText2() {
-  let p = document.getElementById('answer2')
-  let button = document.querySelector('#button2')
+  const p = document.getElementById('answer2')
+  const button = document.querySelector('#button2')
 
   p.style.display = 'block'
   if (p.style.display === 'block') {
     button.textContent = 'Hide Answer'
   }
 }
+
+const bookmarks = document.querySelectorAll('.js-bookmark')
+bookmarks.forEach(bookmark => {
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('js-bookmark')
+  })
+})

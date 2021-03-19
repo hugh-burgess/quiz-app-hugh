@@ -130,36 +130,14 @@ button {
 .content-box .sample-bookmark {
   position: absolute;
   font-size: 50px;
-  color: rgb(6, 6, 6);
   right: 15px;
+  top: -5px;
   cursor: pointer;
   transition: ease-in;
 }
 
-.content-box .sample-bookmark:hover {
-  transform: scale(1.2);
-  position: absolute;
-  font-size: 50px;
-  right: 15px;
-  cursor: pointer;
-  animation-name: color;
-  animation-duration: 2ms;
-  animation-fill-mode: forwards;
-}
-
-.content-box .sample-bookmark:active {
-  transform: scale(1.2);
-  position: absolute;
-  font-size: 50px;
-  right: 15px;
-  color: rgb(207, 68, 68);
-  cursor: pointer;
-}
-
-@keyframes color {
-  100% {
-    color: rgb(207, 68, 68);
-  }
+.js-bookmark {
+  color: beige;
 }
 
 .content-text {
