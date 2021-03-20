@@ -7,7 +7,6 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
-  background-color: aqua;
   grid-column: [width];
 }
 
@@ -52,7 +51,6 @@ button {
 
 /* sample box - flex parent */
 .content {
-  color: black;
   padding: 50px 50px;
   display: flex;
   flex-direction: column;
@@ -79,35 +77,13 @@ button {
   padding: 10px;
 }
 
-/* bookmarks in sample boxes */
-.content-box .sample-bookmark {
-  position: absolute;
-  font-size: 50px;
-  color: rgb(6, 6, 6);
-  right: 15px;
-  top: -5px;
-  cursor: pointer;
-}
-
 .content-text {
   padding: 0 10px;
-}
-
-.answer-button {
-  margin: 0 10px;
-  border-radius: 5px;
-  background-color: tomato;
-  cursor: pointer;
-}
-
-#answer {
-  display: none;
 }
 
 /* targetting button class */
 .footer {
   bottom: 0;
-  background-color: green;
 
   grid-row: footer;
   width: 100vw;
@@ -225,4 +201,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.darkmode-parent {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.darkmode {
+  background-color: black !important;
+  color: white !important;
 }

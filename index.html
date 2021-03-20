@@ -9,7 +9,6 @@
       src="https://kit.fontawesome.com/0a5eba83a2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/index.js"></script>
   </head>
   <body class="body layout-grid">
     <header class="header home-header">
@@ -25,18 +24,10 @@
             fugiat?
           </p>
 
-          <i class="sample-bookmark fas fa-bookmark"></i>
+          <i class="js-bookmark sample-bookmark fas fa-bookmark"></i>
 
-          <button
-            type="button"
-            id="button"
-            class="answer-button"
-            onclick="displayText1()"
-          >
-            Answer
-          </button>
-
-          <p class="answer" id="answer">This answer is...</p>
+          <button type="button" class="answer-button">Answer</button>
+          <p class="hidden answer">This answer is...</p>
 
           <ul class="ul-flex content-topics">
             <li>#Loram</li>
@@ -54,18 +45,10 @@
             fugiat?
           </p>
 
-          <i class="sample-bookmark fas fa-bookmark"></i>
+          <i class="js-bookmark sample-bookmark fas fa-bookmark"></i>
 
-          <button
-            type="button"
-            id="button2"
-            class="answer-button"
-            onclick="displayText2()"
-          >
-            Answer
-          </button>
-
-          <p class="answer" id="answer2">This answer is...</p>
+          <button type="button" class="answer-button">Answer</button>
+          <p class="hidden answer">This answer is...</p>
 
           <ul class="ul-flex content-topics">
             <li>#Loram</li>
@@ -92,5 +75,6 @@
         <a href="./profile.html"><i class="nav-icon far fa-user-circle"></i></a>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -4,10 +4,15 @@
 }
 
 .bookmark-saved {
-  color: rgb(207, 68, 68);
+  color: beige;
   position: absolute;
   font-size: 50px;
   right: 15px;
   top: -5px;
   cursor: pointer;
+}
+
+.saved-bookmark {
+  color: black;
+  fill: none;
 }

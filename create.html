@@ -11,7 +11,6 @@
       src="https://kit.fontawesome.com/0a5eba83a2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/create.js"></script>
 
     <script></script>
   </head>
@@ -28,7 +27,7 @@
           >
           <input
             type="text"
-            name="question"
+            name="question-box__input-question"
             id="question-box__input-question"
             class="question-box-form__question"
             placeholder="2+2"
@@ -41,7 +40,7 @@
           <div class="create-options-wrapper">
             <input
               type="text"
-              name="answer"
+              name="question-box__answer"
               id="question-box__answer"
               class="question-box-form__input-answer"
               placeholder="3"
@@ -51,12 +50,13 @@
               ><input
                 type="radio"
                 name="radio-button"
+                id="radio-button"
                 class="question-box-form__radio-button"
             /></label>
 
             <input
               type="text"
-              name="answer"
+              name="question-box__answer1"
               id="question-box__answer1"
               class="question-box-form__input-answer"
               placeholder="4"
@@ -65,12 +65,13 @@
             <label
               ><input
                 type="radio"
-                name="radio-button"
+                name="radio-button1"
+                id="radio-button1"
                 class="question-box-form__radio-button"
             /></label>
             <input
               type="text"
-              name="answer"
+              name="question-box__answer2"
               id="question-box__answer2"
               class="question-box-form__input-answer"
               placeholder="5"
@@ -79,7 +80,8 @@
             <label
               ><input
                 type="radio"
-                name="radio-button"
+                name="radio-button2"
+                id="radio-button2"
                 class="question-box-form__radio-button"
             /></label>
           </div>
@@ -89,7 +91,7 @@
           >
           <input
             type="text"
-            name="hashtag"
+            name="question-box__tags"
             id="question-box__tags"
             class="question-box-form__input-tags"
             placeholder="#Happy, #Dogs, #Hamburg"
@@ -121,5 +123,6 @@
         <a href="./profile.html"><i class="nav-icon far fa-user-circle"></i></a>
       </div>
     </footer>
+    <script src="./js/create.js"></script>
   </body>
 </html>
