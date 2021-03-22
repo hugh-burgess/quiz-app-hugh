@@ -18,17 +18,29 @@ export function createCard(data) {
   cardSection.append(pElement)
 
   const iElement = document.createElement('i')
-  iElement.classList.add('js-bookmark')
   iElement.classList.add('sample-bookmark')
   iElement.classList.add('fas')
   iElement.classList.add('fa-bookmark')
-  iElement.textContent = data.isBookmarked.value
+  if (data.isBookmarked) {
+    iElement.classList.add('js-bookmark')
+  }
+  iElement.addEventListener('click', () => {
+    iElement.classList.toggle('js-bookmark')
+  })
 
   cardSection.append(iElement)
 
   const button = document.createElement('button')
   button.classList.add('answer-button')
   button.textContent = 'Answer'
+  button.addEventListener('click', () => {
+    answer.classList.toggle('hidden')
+    if (button.textContent === 'Answer') {
+      button.textContent = 'Hide Answer'
+    } else {
+      button.textContent = 'Answer'
+    }
+  })
 
   cardSection.append(button)
 
