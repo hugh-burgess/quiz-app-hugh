@@ -195,6 +195,7 @@ main {
   margin: 0;
   font-size: 1em;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .logout-anchor {
