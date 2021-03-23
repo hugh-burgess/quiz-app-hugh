@@ -10,6 +10,7 @@ export function createCard(data) {
 
   const pElement = document.createElement('p')
   pElement.classList.add('question-box__paragrgaph', 'content-text')
+  pElement.style.textAlign = 'center'
   pElement.textContent = data.question
 
   cardSection.append(pElement)
