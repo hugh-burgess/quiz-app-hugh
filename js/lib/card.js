@@ -4,7 +4,7 @@ export function createCard(data) {
 
   const h2Title = document.createElement('h2')
   h2Title.classList.add('question-box__title', 'content-header')
-  h2Title.textContent = data.id
+  h2Title.textContent = `Question ${data.id}`
 
   cardSection.append(h2Title)
 
