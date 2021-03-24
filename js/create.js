@@ -10,9 +10,6 @@ form.addEventListener('submit', event => {
   const inputForOptionalAnswer1 = form['question-box__answer']
   const inputForOptionalAnswer2 = form['question-box__answer1']
   const inputForOptionalAnswer3 = form['question-box__answer2']
-  // const inputForCorrectAnswer1 = form['question-box-form__radio-button1']
-  // const inputForCorrectAnswer2 = form['question-box-form__radio-button2']
-  // const inputForCorrectAnswer3 = form['question-box-form__radio-button3']
   const inputForHashtags = form['question-box__tags']
 
   const answerList = document.querySelectorAll(
