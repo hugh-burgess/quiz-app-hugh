@@ -23,13 +23,13 @@ form.addEventListener('submit', event => {
     if (checkbox.checked === true) {
       switch (index) {
         case 0:
-          correctBox = 'A'
+          correctBox = 'a'
           break
         case 1:
-          correctBox = 'B'
+          correctBox = 'b'
           break
         case 2:
-          correctBox = 'C'
+          correctBox = 'c'
           break
       }
     }
@@ -48,6 +48,8 @@ form.addEventListener('submit', event => {
     correctBox: correctBox,
 
     hashtags: tagsStringToArray(inputForHashtags.value),
+
+    isBookmarked: false,
   }
 
   pushSection(input)

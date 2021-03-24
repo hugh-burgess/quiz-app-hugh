@@ -5,7 +5,7 @@ const content = document.querySelector('.content')
 
 const data = getSections()
 
-for (let i = 0; i < data.length; i++) {
-  const cardSection = createCard(data[i])
+data.forEach((card, index) => {
+  const cardSection = createCard(card, index)
   content.append(cardSection)
-}
+})

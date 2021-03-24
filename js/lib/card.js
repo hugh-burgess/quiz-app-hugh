@@ -1,4 +1,5 @@
-export function createCard(data) {
+import { getSections } from '/js/lib/db.js'
+export function createCard(data, index) {
   const cardSection = document.createElement('div')
   cardSection.classList.add('question-box', 'content-box')
 
@@ -20,7 +21,17 @@ export function createCard(data) {
     iElement.classList.add('js-bookmark')
   }
   iElement.addEventListener('click', () => {
+    const data = getSections()
+    if (iElement.classList.contains('js-bookmark')) {
+      data[index].isBookmarked = false
+    } else {
+      data[index].isBookmarked = true
+    }
     iElement.classList.toggle('js-bookmark')
+    console.log(data[index])
+
+    // send the data array back into the localStorage
+    localStorage.setItem('sections', JSON.stringify(data))
   })
 
   cardSection.append(iElement)
