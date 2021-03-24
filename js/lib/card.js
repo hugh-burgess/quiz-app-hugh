@@ -61,15 +61,17 @@ export function createCard(data, index) {
 
   cardSection.append(ulElement)
 
-  for (let i = 0; i < data.hashtags.length; i++) {
+  // refactoring, lol
+  // its the modern way, its cooler
+  data.hashtags.forEach(hashtag => {
     const listItemElement = document.createElement('li')
-    listItemElement.textContent = data.hashtags[i]
+    listItemElement.textContent = hashtag
     listItemElement.style.width = '60px'
     listItemElement.style.alignSelf = 'center'
     listItemElement.style.textAlign = 'center'
     listItemElement.style.padding = '2px'
     ulElement.append(listItemElement)
-  }
+  })
 
   return cardSection
 }
