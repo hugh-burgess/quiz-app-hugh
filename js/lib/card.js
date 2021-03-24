@@ -62,7 +62,7 @@ export function createCard(data, index) {
   cardSection.append(ulElement)
 
   // refactoring, lol
-  // its the modern way, its cooler
+  // its the modern way, its cooler than for loops
   data.hashtags.forEach(hashtag => {
     const listItemElement = document.createElement('li')
     listItemElement.textContent = hashtag
