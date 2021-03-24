@@ -9,7 +9,8 @@ const filteredData = data.filter(card => {
   return card.isBookmarked === true
 })
 
-filteredData.forEach((card, index) => {
-  const cardSection = createCard(card, index)
+filteredData.forEach(card => {
+  // bring the index position of the cardback with -1
+  const cardSection = createCard(card, card.id - 1)
   content.append(cardSection)
 })

@@ -1,4 +1,5 @@
 import { pushSection } from './lib/db.js'
+import { getSections } from '/js/lib/db.js'
 
 const form = document.querySelector('.question-box-form')
 
@@ -35,8 +36,10 @@ form.addEventListener('submit', event => {
     }
   })
 
+  const data = getSections()
   console.log(correctBox)
   const input = {
+    id: data.length + 1,
     question: inputForQuestion.value,
 
     optionalAnswers: {

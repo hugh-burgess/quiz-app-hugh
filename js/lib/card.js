@@ -5,14 +5,14 @@ export function createCard(data, index) {
 
   const h2Title = document.createElement('h2')
   h2Title.classList.add('question-box__title', 'content-header')
-  // h2Title.textContent = `Question ${data.question}`
+  h2Title.textContent = `Question ${data.id}`
 
   cardSection.append(h2Title)
 
   const pElement = document.createElement('p')
   pElement.classList.add('question-box__paragrgaph', 'content-text')
   pElement.style.textAlign = 'center'
-  pElement.textContent = `Question: ${data.question}`
+  pElement.textContent = `${data.question}`
   cardSection.append(pElement)
 
   const iElement = document.createElement('i')
