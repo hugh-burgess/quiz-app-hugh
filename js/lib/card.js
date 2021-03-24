@@ -4,15 +4,14 @@ export function createCard(data) {
 
   const h2Title = document.createElement('h2')
   h2Title.classList.add('question-box__title', 'content-header')
-  h2Title.textContent = `Question ${data.id}`
+  // h2Title.textContent = `Question ${data.question}`
 
   cardSection.append(h2Title)
 
   const pElement = document.createElement('p')
   pElement.classList.add('question-box__paragrgaph', 'content-text')
   pElement.style.textAlign = 'center'
-  pElement.textContent = data.question
-
+  pElement.textContent = `Question: ${data.question}`
   cardSection.append(pElement)
 
   const iElement = document.createElement('i')
@@ -42,7 +41,7 @@ export function createCard(data) {
 
   const answer = document.createElement('p')
   answer.classList.add('hidden', 'answer')
-  answer.textContent = data.answer
+  answer.textContent = data.optionalAnswers[data.correctBox]
 
   cardSection.append(answer)
 
@@ -51,9 +50,9 @@ export function createCard(data) {
 
   cardSection.append(ulElement)
 
-  for (let i = 0; i < data.tags.length; i++) {
+  for (let i = 0; i < data.hashtags.length; i++) {
     const listItemElement = document.createElement('li')
-    listItemElement.textContent = data.tags[i]
+    listItemElement.textContent = data.hashtags[i]
     listItemElement.style.width = '60px'
     listItemElement.style.alignSelf = 'center'
     listItemElement.style.textAlign = 'center'
