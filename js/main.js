@@ -1,9 +1,11 @@
-import { data } from '/js/lib/db.js'
+import { getSections } from '/js/lib/db.js'
 import { createCard } from '/js/lib/card.js'
 
 const content = document.querySelector('.content')
 
-for (let i = 0; i < data.length; i++) {
-  const cardSection = createCard(data[i])
+const data = getSections()
+
+data.forEach((card, index) => {
+  const cardSection = createCard(card, index)
   content.append(cardSection)
-}
+})

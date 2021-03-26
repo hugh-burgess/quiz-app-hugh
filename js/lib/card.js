@@ -1,4 +1,5 @@
-export function createCard(data) {
+import { getSections } from '/js/lib/db.js'
+export function createCard(data, index) {
   const cardSection = document.createElement('div')
   cardSection.classList.add('question-box', 'content-box')
 
@@ -11,8 +12,7 @@ export function createCard(data) {
   const pElement = document.createElement('p')
   pElement.classList.add('question-box__paragrgaph', 'content-text')
   pElement.style.textAlign = 'center'
-  pElement.textContent = data.question
-
+  pElement.textContent = `${data.question}`
   cardSection.append(pElement)
 
   const iElement = document.createElement('i')
@@ -21,7 +21,17 @@ export function createCard(data) {
     iElement.classList.add('js-bookmark')
   }
   iElement.addEventListener('click', () => {
+    const data = getSections()
+    if (iElement.classList.contains('js-bookmark')) {
+      data[index].isBookmarked = false
+    } else {
+      data[index].isBookmarked = true
+    }
     iElement.classList.toggle('js-bookmark')
+    console.log(data[index])
+
+    // send the data array back into the localStorage
+    localStorage.setItem('sections', JSON.stringify(data))
   })
 
   cardSection.append(iElement)
@@ -42,7 +52,7 @@ export function createCard(data) {
 
   const answer = document.createElement('p')
   answer.classList.add('hidden', 'answer')
-  answer.textContent = data.answer
+  answer.textContent = data.optionalAnswers[data.correctBox]
 
   cardSection.append(answer)
 
@@ -51,15 +61,17 @@ export function createCard(data) {
 
   cardSection.append(ulElement)
 
-  for (let i = 0; i < data.tags.length; i++) {
+  // refactoring, lol
+  // its the modern way, its cooler than for loops
+  data.hashtags.forEach(hashtag => {
     const listItemElement = document.createElement('li')
-    listItemElement.textContent = data.tags[i]
+    listItemElement.textContent = hashtag
     listItemElement.style.width = '60px'
     listItemElement.style.alignSelf = 'center'
     listItemElement.style.textAlign = 'center'
     listItemElement.style.padding = '2px'
     ulElement.append(listItemElement)
-  }
+  })
 
   return cardSection
 }
